@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+
+    tools:context=".DuaListActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:id="@+id/parent"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#000"
+
+                android:layout_below="@id/toolbar"
+
+                android:paddingTop="10dp">
+<TextView
+    android:id="@+id/heading"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="50dp"
+                    android:layout_height="48dp"
+                    android:tint="#fff"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp" />
+                <Button
+                    android:id="@+id/reset_button"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:background="#8B9693"
+                    android:textColor="#fff"
+                    android:text="Reset"
+
+                    />
+                <NumberPicker
+                    android:id="@+id/number_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layoutAnimation="@anim/layout_slide_from_left"
+                    android:stateListAnimator="@font/aclonica"
+
+                    android:autofillHints="0"
+                    android:scrollbarStyle="outsideInset"
+
+                    android:background="#fff"
+
+
+                    ></NumberPicker>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/zikar"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+
+                android:layout_marginTop="10dp"
+                android:background="#000"
+                android:fontFamily="@font/arabic2"
+
+                android:lineSpacingExtra="@dimen/fab_margin"
+                android:paddingLeft="25dp"
+                android:paddingTop="7dp"
+                android:paddingRight="28dp"
+                android:scrollbars="vertical"
+                android:text="اللَّهُمَّأَنْتَرَبِّىلاَإِلهَإِلاَأَنْتَ،خَلَقْتَنِىوَأنَاعَبْدُكَوَأنَاعَلَىعَهْدِكَمااسْتَطَعْتُ،أعُوذُبِكَمِنْشَرِمَاصَنَعْت،أَبُوءُلَكَبِنِعْمَتِكَعَلَىَّوَأبُوءُبِذَنْبىفَاغْفِرْلِىفإِنَّهُلاَيَغْفِرُالذُّنُوبَإِلَّاأَنْتَ-"
+                android:textColor="#fff"
+                android:textIsSelectable="true"
+
+                android:textSize="30sp"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+
+                android:layout_marginTop="20dp"
+
+                android:background="#000"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="120dp"
+                    android:background="@drawable/circle_dark_background"
+
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/counter"
+                        android:layout_width="110dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+
+
+                        android:background="@drawable/rectangle_background_view"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:textColor="#4F5EBD"
+                        android:textSize="25sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

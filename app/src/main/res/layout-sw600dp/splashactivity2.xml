@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SplashActivity"
+    android:orientation="vertical"
+    android:background="#000"
+    android:scaleType="centerCrop"
+    android:weightSum="4">
+
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo_dark"
+        android:contentDescription="TODO" />
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+          android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+
+
+            >
+
+
+            <ImageView
+                android:id="@+id/p1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_row="0"
+                android:layout_column="0"
+
+android:layout_marginRight="70dp"
+                android:background="@drawable/splash_dark_background"
+                android:src="@drawable/home_dark"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/p2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:background="@drawable/splash_dark_background"
+                android:src="@drawable/dua_dark"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/p3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/splash_dark_background"
+                android:src="@drawable/compass_dark"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/p4"
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/splash_dark_background"
+                android:src="@drawable/prayer_dark"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/p6"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginRight="50dp"
+
+                android:background="@drawable/splash_dark_background"
+                android:src="@drawable/fav_icon_dark"
+                android:contentDescription="TODO" />
+
+            <ImageView
+                android:id="@+id/p5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_row="2"
+                android:layout_column="2"
+
+                android:background="@drawable/splash_dark_background"
+                android:src="@drawable/settings_dark"
+                android:contentDescription="TODO" />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

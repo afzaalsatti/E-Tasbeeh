@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#E5E5E5"
+        android:textAlignment="center"
+        app:subtitleTextColor="#F3EEEE"
+        app:titleTextColor="#000000">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/darkback"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="3dp"
+            android:layout_margin="0dp"
+            android:contentDescription="TODO" />
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:fontFamily="@font/helvitecia"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Daily Zikar"
+            android:textSize="30sp" />
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:scaleX="1.7"
+            android:scaleY="1.7"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="12dp"
+            android:tint="#000"
+            android:src="@drawable/ic_refresh_black_24dp"
+            android:contentDescription="TODO" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:itemIconTint="#979595"
+        app:itemIconSize="45dp"
+        app:menu="@menu/navigation_bar"
+        android:background="#000000"
+       />
+    <android.support.v7.widget.RecyclerView
+android:id="@+id/zikar_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/adView"
+        android:background="#000" />
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigation"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+</RelativeLayout>

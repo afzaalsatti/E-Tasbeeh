@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    >
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/nav_home"
+
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_dua"
+        android:icon="@drawable/nav_dua"
+
+
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/navigation_kaba_compass"
+        android:icon="@drawable/nav_compass"
+
+        android:title="" />
+    <item
+
+        android:id="@+id/navigation_prayer_time"
+        android:icon="@drawable/nav_prayer"
+
+        android:title="" />
+        />
+
+
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/nav_settings"
+        android:title="" />
+
+</menu>

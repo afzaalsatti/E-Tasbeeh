@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:orientation="vertical"
+    android:background="#000"
+    android:scaleType = "centerCrop"
+    android:weightSum="4">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/darkicon" />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+
+
+        >
+
+    <ImageView
+        android:id="@+id/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_marginBottom="10dp"
+
+        android:src="@drawable/dark1" />
+
+    <ImageView
+        android:id="@+id/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:src="@drawable/dark2" />
+
+        <ImageView
+            android:id="@+id/p3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_row="1"
+
+            android:layout_column="0"
+            android:src="@drawable/dark3" />
+
+        <ImageView
+            android:id="@+id/p4"
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/dark4" />
+
+        <ImageView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/dark5" />
+
+        <ImageView
+            android:id="@+id/p5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:src="@drawable/dark6" />
+
+
+
+</GridLayout>
+
+
+</LinearLayout>
